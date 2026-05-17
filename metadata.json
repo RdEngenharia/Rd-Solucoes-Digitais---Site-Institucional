@@ -1,0 +1,8 @@
+{
+  "name": "RD Soluções Digitais",
+  "description": "Landing page moderna para RD Soluções Digitais, focada em sistemas web, automações e landing pages para PME.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
