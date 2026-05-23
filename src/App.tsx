@@ -37,14 +37,19 @@ export default function App() {
   const whatsappNumber = "5573991317853";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Olá! Vim pelo site da RD Soluções e gostaria de um orçamento para meu site.`;
 
-  // Lista de 6 projetos para o portfólio (subdomínios)
+  // CAMINHO DA SUA LOGO PERSONALIZADA:
+  // Para usar sua logo em imagem:
+  // 1. Salve o arquivo de imagem (ex: logo.png) na pasta "public/assets/"
+  // 2. Coloque o caminho abaixo (ex: "/assets/logo.png")
+  // 3. Mantenha vazio "" para continuar usando o design de ícone CSS atual
+  const logoImageUrl = ""; 
+
+  // Lista de projetos reais para o portfólio (subdomínios)
   const portfolioProjects = [
-    { id: 1, title: "Site Advocacia Premium", type: "Landing Page", link: "https://advocacia.rdsolucoes.com.br", image: "/assets/p-advocacia.jpg" },
-    { id: 2, title: "Sistema de Agendamento", type: "Web System", link: "https://agendafacil.rdsolucoes.com.br", image: "/assets/p-agendamento.jpg" },
-    { id: 3, title: "Landing Page Corretor", type: "Imobiliária", link: "https://imoveis.rdsolucoes.com.br", image: "/assets/p-corretor.jpg" },
-    { id: 4, title: "Dashboard Comercial", type: "Automação", link: "https://dash.rdsolucoes.com.br", image: "/assets/p-dashboard.jpg" },
-    { id: 5, title: "Site Vitrine Estética", type: "Institucional", link: "https://estetica.rdsolucoes.com.br", image: "/assets/p-estetica.jpg" },
-    { id: 6, title: "Página de Captura E-book", type: "Infoproduto", link: "https://ebook.rdsolucoes.com.br", image: "/assets/p-ebook.jpg" },
+    { id: 1, title: "Check-In Online", type: "Sistema Web / SaaS", link: "https://checkin.rdsolucoes.com.br", image: "/assets/p-checkin.jpg" },
+    { id: 2, title: "RD Engenharia - Homologação", type: "Portal Institucional", link: "https://engenharia.rdsolucoes.com.br", image: "/assets/p-engenharia.jpg" },
+    { id: 3, title: "Agenda & Calendário", type: "Plataforma de Agendamentos", link: "https://agenda.rdsolucoes.com.br", image: "/assets/p-agenda.jpg" },
+    { id: 4, title: "Energia Solar Inteligente", type: "Aceleração & Leads", link: "https://solar.rdsolucoes.com.br", image: "/assets/p-solar.jpg" },
   ];
 
   return (
@@ -58,12 +63,21 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/60 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(6,182,212,0.3)]"
-            >
-              <span className="text-slate-900 font-black text-xl">RD</span>
-            </motion.div>
+            {logoImageUrl ? (
+              <motion.img 
+                whileHover={{ scale: 1.05 }}
+                src={logoImageUrl} 
+                alt="RD Logo" 
+                className="w-10 h-10 object-contain rounded-xl"
+              />
+            ) : (
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(6,182,212,0.3)]"
+              >
+                <span className="text-slate-900 font-black text-xl">RD</span>
+              </motion.div>
+            )}
             <span className="font-bold text-xl tracking-tight hidden sm:block">RD Soluções <span className="text-cyan-400">Digitais</span></span>
           </div>
 
@@ -424,7 +438,15 @@ export default function App() {
       <footer className="py-16 border-t border-white/5 relative z-10 bg-slate-950 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center text-slate-900 font-black text-lg">RD</div>
+            {logoImageUrl ? (
+              <img 
+                src={logoImageUrl} 
+                alt="RD Logo" 
+                className="w-10 h-10 object-contain rounded-xl"
+              />
+            ) : (
+              <div className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center text-slate-900 font-black text-lg">RD</div>
+            )}
             <div className="flex flex-col items-start leading-none">
               <span className="font-bold text-white text-lg">RD Soluções</span>
               <span className="text-[10px] text-cyan-400 uppercase tracking-widest font-black">Digitais</span>
