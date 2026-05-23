@@ -42,7 +42,7 @@ export default function App() {
   // 1. Salve o arquivo de imagem (ex: logo.png) na pasta "public/assets/"
   // 2. Coloque o caminho abaixo (ex: "/assets/logo.png")
   // 3. Mantenha vazio "" para continuar usando o design de ícone CSS atual
-  const logoImageUrl = ""; 
+  const logoImageUrl = "/assets/logo.png"; 
 
   // Lista de projetos reais para o portfólio (subdomínios)
   const portfolioProjects = [
