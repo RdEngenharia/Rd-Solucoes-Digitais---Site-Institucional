@@ -48,7 +48,7 @@ export default function App() {
   const portfolioProjects = [
     { id: 1, title: "Check-In Online", type: "Sistema Web / SaaS", link: "https://checkin.rdhomologacao.com.br", image: "/assets/p-checkin.jpg" },
     { id: 2, title: "RD Engenharia - Homologação", type: "Portal Institucional", link: "https://www.rdhomologacao.com.br/", image: "/assets/p-engenharia.jpg" },
-    { id: 3, title: "Agenda & Calendário", type: "Plataforma de Agendamentos", link: "https://agenda.rdsolucoes.com.br", image: "/assets/p-agenda.jpg" },
+    { id: 3, title: "Agenda & Calendário", type: "Plataforma de Agendamentos", link: "https://calendario.rdhomologacao.com.br/", image: "/assets/p-agenda.jpg" },
     { id: 4, title: "Energia Solar Inteligente", type: "Aceleração & Leads", link: "https://solar.rdsolucoes.com.br", image: "/assets/p-solar.jpg" },
   ];
 
