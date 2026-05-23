@@ -177,7 +177,7 @@ export default function App() {
               <img 
                 src="/assets/hero-bg.jpg" 
                 alt="Digital Presence" 
-                className="rounded-[2.5rem] grayscale opacity-40 group-hover:grayscale-0 transition-all duration-700"
+                className="rounded-[2.5rem] opacity-80 group-hover:opacity-100 transition-all duration-700 w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent rounded-[2.5rem]" />
               <div className="absolute bottom-12 left-12 right-12">
@@ -228,7 +228,7 @@ export default function App() {
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
                   <div className="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-cyan-400 border border-white/5">
@@ -324,7 +324,7 @@ export default function App() {
               <p className="text-white/40 text-lg mb-8 leading-relaxed">
                 Páginas focadas 100% em conversão. Ideais para campanhas de tráfego pago (Google e Meta Ads) com carregamento instantâneo.
               </p>
-              <div className="w-full h-48 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden grayscale group-hover:grayscale-0 transition-all">
+              <div className="w-full h-48 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden transition-all">
                  {/* IMAGEM SOLUÇÃO LP: Sugestão de nome -> public/assets/lp-solution.jpg */}
                  <img 
                   src="/assets/lp-solution.jpg" 
