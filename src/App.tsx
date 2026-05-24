@@ -147,7 +147,7 @@ export default function App() {
 
             <div className="flex flex-col items-center lg:items-start gap-6">
               <div className="bg-white/5 border border-white/10 px-6 py-4 rounded-3xl flex items-center gap-4 group hover:bg-white/10 transition-colors">
-                <div className="text-3xl font-black text-emerald-400">R$ 800</div>
+                <div className="text-3xl font-black text-emerald-400">R$ 600</div>
                 <div className="h-10 w-px bg-white/10" />
                 <div className="text-left">
                   <div className="text-xs uppercase tracking-widest text-white/40">Investimento Único</div>
@@ -422,7 +422,7 @@ export default function App() {
           >
             <h2 className="text-4xl md:text-7xl font-black mb-10 text-white">Agilidade. Confiança. <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Resultados.</span></h2>
             <p className="text-xl text-white/40 mb-16 max-w-xl mx-auto">
-              Tenha seu site profissional rodando e trazendo clientes por apenas R$ 800. Vamos começar?
+              Tenha seu site profissional rodando e trazendo clientes por apenas R$ 600. Vamos começar?
             </p>
             <button 
               onClick={() => window.open(whatsappUrl, '_blank')}
