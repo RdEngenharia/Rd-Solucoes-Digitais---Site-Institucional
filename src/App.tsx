@@ -1,6 +1,6 @@
 /**
  * Landing Page RD Soluções Digitais
- * Foco: Venda de Sites Profissionais (R$ 800,00)
+ * Foco: Venda de Sites Profissionais (R$ 600,00)
  * Estilo: Dark Mode / Tech / Alta Conversão
  */
 
@@ -160,7 +160,7 @@ export default function App() {
                   onClick={() => window.open(whatsappUrl, '_blank')}
                   className="bg-emerald-500 text-slate-950 px-10 py-5 rounded-full font-black text-xl flex items-center justify-center gap-3 hover:shadow-[0_0_40px_rgba(16,185,129,0.5)] transition-all emerald-glow group"
                 >
-                  <Globe className="w-6 h-6" /> [ 🌐 Criar Meu Site Agora ]
+                  <Globe className="w-6 h-6" />  🌐 Criar Meu Site Agora 
                 </button>
               </div>
             </div>
@@ -428,7 +428,7 @@ export default function App() {
               onClick={() => window.open(whatsappUrl, '_blank')}
               className="bg-emerald-500 text-slate-950 px-12 py-6 rounded-full font-black text-xl hover:shadow-[0_0_50px_rgba(16,185,129,0.5)] transition-all active:scale-95 duration-500 inline-flex items-center gap-4 emerald-glow"
             >
-              <MessageCircle className="w-7 h-7" /> [ 🌐 Criar Meu Site Agora ]
+              <MessageCircle className="w-7 h-7" />  🌐 Criar Meu Site Agora 
             </button>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[120px] -z-10" />
           </motion.div>
@@ -462,7 +462,7 @@ export default function App() {
           </div>
 
           <div className="text-[10px] text-white/20 font-mono">
-            © {new Date().getFullYear()} RD SYSTEMS // CNPJ: XX.XXX.XXX/0001-XX
+            © {new Date().getFullYear()} RD SOLUCOES // CNPJ: 44.367.932/0001-42
           </div>
         </div>
       </footer>
@@ -479,7 +479,7 @@ export default function App() {
       >
         <MessageCircle className="w-8 h-8" />
         <span className="absolute right-full mr-5 bg-white text-slate-950 px-5 py-3 rounded-2xl text-xs font-black shadow-2xl opacity-0 group-hover:opacity-100 transition-all pointer-events-none whitespace-nowrap">
-          Falar com Gabriel (RD)
+          Falar com RODRIGUES (RD)
         </span>
       </motion.a>
     </div>
